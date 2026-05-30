@@ -1,5 +1,7 @@
 name: Go CI/CD
 
+#тупанул - запушил вместо pr - оставляю комент чтобы сделать еще один pr
+
 on:
   push:
     branches:
@@ -42,3 +44,4 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/tracker:${{ github.ref_name }}
+
